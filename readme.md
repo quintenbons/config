@@ -11,6 +11,7 @@ To export your local config to this branch:
 # Utilities
 
 - [Change Directory Bookmarks (cdb)](#change-directory-bookmarks)
+- [Github](#github)
 
 ### Change Directory Bookmarks
 
@@ -29,4 +30,17 @@ cdb -l
 Goto bookmark:
 ```bash
 cdb [-g] bookmark
+```
+
+### Github
+
+To push everything in a lazy way:
+```bash
+lazygit commitMessage
+```
+
+#### <span style="color:red;">TODO</span>
+To make a new git repo via github's api:
+```
+git-create-repo repoName
 ```
