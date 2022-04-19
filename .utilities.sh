@@ -23,7 +23,7 @@ function cdb() {
             ;;
         # list bookmarks
         -l) shift
-            ls -l ~/.cd_bookmarks/ ;
+            ls ~/.cd_bookmarks/ ;
             ;;
         # goto bookmark (default)
         *) [ $1 = -g ] && shift;
