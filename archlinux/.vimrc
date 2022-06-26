@@ -1,32 +1,13 @@
-"" ensimag vim config file version 1.0.3
-"" this file is intended for vim 8
-"" before using it you will need to
-"" - install plug with :
-""      curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"" (see https://github.com/junegunn/vim-plug)
-"" - install the languageserver server for each language you indend to use :
-""    * pyls for python (see https://github.com/palantir/python-language-server)
-""    * rls for rust (see https://github.com/rust-lang-nursery/rls)
-""    * clangd for c
-"" - install some font with powerline symbols for eye candy and icons
-"" (see https://github.com/powerline/fonts)
-"" - change plugin directory to ~/.vim/plugged
-"" (uncomment line 22 and comment line 21)
-
 "" after that copy this file as your ~/.vimrc and execute :PlugInstall
 
 set nocompatible
 filetype off
 
 call plug#begin()
-" call plug#begin('~/.vim/plugged')
-
 Plug 'tpope/vim-sensible' " sane defaults
-
-" eye candy
 Plug 'vim-airline/vim-airline' " status bar (needs special fonts)
 Plug 'vim-airline/vim-airline-themes'
-Plug 'gruvbox-community/gruvbox/' " nice and soft colorscheme (disabled by default, use 'colo gruvbox' if you want to try it)
+Plug 'gruvbox-community/gruvbox/' " colorscheme
 Plug 'tomasr/molokai' " colorscheme compatible with many terminals
 Plug 'ryanoasis/vim-devicons' " various symbols (linux, rust, python, ...)
 
@@ -134,8 +115,5 @@ set splitright
 " personal mappings
 nn , <Nop>
 nn ,e :NERDTree<CR>
-nn ,t :!clear && make && brocomatise %:r<CR>
-nn ,c :!lazygit 
-nn ,r I/* <Esc>A */<Esc>
-nn  :Files<CR>
+nn <C-p> Files<CR>
 nn ,f :!%:p

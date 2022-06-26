@@ -14,9 +14,14 @@ if read -q "choice?$WARNME" ; then
     echo
     scriptDir=$(dirname $0);
     mkdir ~/.cd_bookmarks;
-    cpConfirm "$scriptDir/.config/zshrc" "$HOME/.config/zshrc";
     cpConfirm "$scriptDir/.zshrc" "$HOME/.zshrc";
     cpConfirm "$scriptDir/.vimrc" "$HOME/.vimrc";
+    cpConfirm "$scriptDir/.config/zshrc" "$HOME/.config/zshrc";
+    cpConfirm "$scriptDir/.config/i3" "$HOME/.config/i3";
+    cpConfirm "$scriptDir/.config/i3status" "$HOME/.config/i3status";
+    cpConfirm "$scriptDir/.config/kitty" "$HOME/.config/kitty";
+    cpConfirm "$scriptDir/.config/nvim" "$HOME/.config/nvim";
+    cpConfirm "$scriptDir/.config/picom" "$HOME/.config/picom";
 else
     echo
     echo "Aborted";

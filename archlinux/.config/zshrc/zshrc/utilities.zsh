@@ -43,4 +43,12 @@ _bookmark_complete () {
     done
 }
 
-complete -F _bookmark_complete cdb
+nvimfg () {
+    if jobs | grep -q "nvim"; then
+        fg nvim;
+    else
+        nvim $@;
+    fi
+}
+
+# complete -F _bookmark_complete cdb
