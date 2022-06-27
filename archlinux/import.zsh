@@ -16,12 +16,12 @@ if read -q "choice?$WARNME" ; then
     mkdir ~/.cd_bookmarks;
     cpConfirm "$scriptDir/.zshrc" "$HOME/.zshrc";
     cpConfirm "$scriptDir/.vimrc" "$HOME/.vimrc";
-    cpConfirm "$scriptDir/.config/zshrc" "$HOME/.config/zshrc";
-    cpConfirm "$scriptDir/.config/i3" "$HOME/.config/i3";
-    cpConfirm "$scriptDir/.config/i3status" "$HOME/.config/i3status";
-    cpConfirm "$scriptDir/.config/kitty" "$HOME/.config/kitty";
-    cpConfirm "$scriptDir/.config/nvim" "$HOME/.config/nvim";
-    cpConfirm "$scriptDir/.config/picom" "$HOME/.config/picom";
+    cpConfirm "$scriptDir/.config/zshrc" "$HOME/.config/";
+    cpConfirm "$scriptDir/.config/i3" "$HOME/.config/";
+    cpConfirm "$scriptDir/.config/i3status" "$HOME/.config/";
+    cpConfirm "$scriptDir/.config/kitty" "$HOME/.config/";
+    cpConfirm "$scriptDir/.config/nvim" "$HOME/.config/";
+    cpConfirm "$scriptDir/.config/picom" "$HOME/.config/";
 else
     echo
     echo "Aborted";
