@@ -1,12 +1,12 @@
 # git difftool
-git config --global diff.tool vimdiff
-git config --global difftool.prompt false
-git config --global alias.d difftool
+# git config --global diff.tool vimdiff
+# git config --global difftool.prompt false
+# git config --global alias.d difftool
 
 # git mergetool
-git config --global merge.tool vimdiff
-git config --global merge.conflictstyle diff3
-git config --global alias.m mergetool
+# git config --global merge.tool vimdiff
+# git config --global merge.conflictstyle diff3
+# git config --global alias.m mergetool
 
 function lazygit() {
     # when i feel trashy
